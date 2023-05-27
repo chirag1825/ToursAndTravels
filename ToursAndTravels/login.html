@@ -1,0 +1,81 @@
+<?php
+
+include('connect.php');
+
+
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login/Sign up</title>
+    <link rel="stylesheet" type="text/css" href="css_style.css">
+
+
+</head>
+
+<body>
+
+    <div class="box">
+        <input type="checkbox" class="toggle-btn" name="">
+
+
+        <div class="signup">
+            <form action="connect.php" method="post">
+                <div class="input-group">
+                    <span>Username</span>
+                    <input type="text" placeholder="abc123" id="uname" name="uname" class="inp">
+                </div>
+                <div class="input-group">
+                    <span>Email</span>
+                    <input type="email" placeholder="abc@123.com" id="ename" name="ename" class="inp">
+                </div>
+                <div class="input-group">
+                    <span>Password</span>
+                    <input type="password" placeholder="*******" id="pname" name="pname" class="inp">
+                </div>
+                <div class="input-group">
+                    <span>DOB</span>
+                    <input type="date" id="dobname" name="dobname" class="inp">
+                </div>
+                <div class="input-group" style="margin-top: 20px;">
+
+                    <input type="submit" value="Sign Up" class="inp submit-inp" >
+                </div>
+            </form>
+        </div>
+
+        <div class="login">
+            <form action="validation.php" method="post">
+                <div class="input-group">
+
+                    <div class="input-group">
+                        <span>Email</span>
+                        <input type="email" placeholder="abc@123.com" name="email" class="inp">
+                    </div>
+                    <div class="input-group">
+                        <span>Password</span>
+                        <input type="password" placeholder="*******" name="pass" class="inp">
+
+                    </div>
+
+                    <div class="input-group" style="margin-top: 20px;">
+
+                        <input type="submit" value="Login" class="inp submit-inp">
+
+                    </div>
+                    <div class="input-group" style="margin-top: 20px;">
+
+                        <!-- <a href="forgetcred.html">forgot password ?</a> -->
+                    </div>
+                    
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

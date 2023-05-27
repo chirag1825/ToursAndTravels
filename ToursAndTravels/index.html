@@ -1,0 +1,355 @@
+<!-- <?php
+
+        include('connect.php');
+
+
+        ?> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Site</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="header">
+      <div class="container">
+        <img
+          src="images/Blue_Minimalist_Destination_Sea_Travel_Logo__2_-removebg-preview.png"
+          alt="logo"
+        />
+
+        <button type="button" class="login-btn">
+          <a href="login.html">Login / Sign up</a>
+        </button>
+
+        <!-- <button type="button" class="login-btn">
+			<a href="login.html">packages</a></button> -->
+      </div>
+
+      <h1>Tours & Travels</h1>
+      <p>A New Sky , A New Life.</p>
+
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search Country or City"
+        />
+
+        <div class="input-group-append">
+          <button type="submit" class="input-group-text btn">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h1>Featured Destinations</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature-box">
+              <div class="feature-img">
+                <img src="images/Europe.jpg" alt="One" />
+                <div class="price">
+                  <p>500$</p>
+                </div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+              <div class="feature-details">
+                <h4>Italy</h4>
+                <p>
+                  The Colosseum is famous for its magnificent stadia structure
+                  and the brutal history that unfolded within its confines. The
+                  centre of grim Roman indulgence, this is where the emperor,
+                  his cohort and the people of Rome would come to watch the
+                  terrifying gladiator contents.
+                </p>
+              </div>
+              <br />
+              <span><i class="fa fa-map-marker"> </i>Rome</span>
+              <span><i class="fa fa-sun-o"> </i>4 Days</span>
+              <span><i class="fa fa-moon-o"> </i>3 Nights</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box">
+              <div class="feature-img">
+                <img src="images/usa.jpg" alt="One" />
+                <div class="price">
+                  <p>300$</p>
+                </div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+              <div class="feature-details">
+                <h4>U.S.A</h4>
+                <p>
+                  The United States Capitol Building is located in Washington,
+                  D.C., at the eastern end of the National Mall on a plateau 88
+                  feet above the level of the Potomac River, commanding a
+                  westward view across the U.S. Capitol Reflecting Pool to the
+                  Washington Monument 1.4 miles away and the Lincoln Memorial
+                  2.2 miles away.
+                </p>
+              </div>
+              <span><i class="fa fa-map-marker"> </i>USA</span>
+              <span><i class="fa fa-sun-o"> </i>4 Days</span>
+              <span><i class="fa fa-moon-o"> </i>3 Nights</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box">
+              <div class="feature-img">
+                <img src="images/Sankt Moritz.webp" alt="One" />
+                <div class="price">
+                  <p>900$</p>
+                </div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+              </div>
+              <div class="feature-details">
+                <h4>Switzerland</h4>
+                <p>
+                  Moritz is more than just a holiday resort. It was also the
+                  birthplace of Alpine winter tourism (in 1864) and has twice
+                  hosted the Winter Olympics. Nevertheless, St. Moritz first
+                  became famous thanks to its mineral springs, which were
+                  discovered 3,000 years ago and established the town as a
+                  summer spa resort early on.
+                </p>
+              </div>
+              <span><i class="fa fa-map-marker"> </i>Switzerland</span>
+              <span><i class="fa fa-sun-o"> </i>4 Days</span>
+              <span><i class="fa fa-moon-o"> </i>3 Nights</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h1>Travelling Gallery</h1>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="gallery-box">
+              <img src="images/traveler 1.jpg" alt="travel" />
+              <h4>Italy</h4>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="gallery-box">
+              <img src="images/traveler 2.1.jpg" alt="travel" />
+              <h4>USA</h4>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="gallery-box">
+              <img src="images/traveler 3.jpg" alt="travel" />
+              <h4>Switzerland</h4>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="gallery-box">
+              <img src="images/traveler 4.jpg" alt="travel" />
+              <h4>Paris</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="banner-highlights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h2>Get 30% on top destination</h2>
+              <p>
+                Book your tickets before 31st August and avail 30% flat
+                discount.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <button type="button" class="booking-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="users-feedback">
+      <h1>User Reviews</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="user-review">
+              <p>
+                I travelled through T&T Holiday s in 3 cities of USA. The
+                arrangement s were excellent. Nice hotels, smooth travel and
+                timely pick up and drop. T&T Holidays person Mr Rashid was in
+                touch with me and closely followed up my travel to ensure
+                everything is smooth. Avis India person Mr Babloo was following
+                up my pickup and drop abroad minute by minute. It was a great
+                experience. Thanks to T&T Holidays and Travel triangle.
+              </p>
+              <br />
+              <br />
+              <h5>Will smith</h5>
+              <small>USA</small>
+            </div>
+            <img src="images/review 2.jpg" alt="user" />
+          </div>
+
+          <div class="col-md-4">
+            <div class="user-review">
+              <p>
+                Hello fellow writers and travelers,My name is Selena Gomez and
+                while I am not a professional writer, I am an avid traveler. I
+                would like to eventually write professionally, and traveling is
+                one of the topics I am most equipped to discuss. Outside of the
+                U.S., I have been fortunate to live in 5 other countries and
+                have visited several others. What I hope to gain from writing on
+                this platform is experience, friends and connections, knowledge,
+                and the opportunity to share traveling stories, tips, and ideas.
+                Stay curious, everyone!
+              </p>
+              <br />
+              <h5>Selena Gomez</h5>
+              <small>Rome</small>
+            </div>
+            <img src="images/review 1.3.jpg" alt="user" />
+          </div>
+
+          <div class="col-md-4">
+            <div class="user-review">
+              <p>
+                I went to Swiss for 3 days. with 7 of my Freinds.We Landed in
+                Euro Airport in Basel. The Airport was awesome, it connects
+                france, swiss, and germany at the same location. From there we
+                went to Schaffhausen to visit the Rhine falls. It was awesome
+                experience. From Schaffhausen we wnt to Interlaken City were we
+                spent the night. Next day we went to Mount Titlis, where there
+                is snow everytime of the year. We skied , played with snow. In
+                the evening went to place called Luzern. I was amazed to see the
+                grand station of Luzern. And on the Third day wen to Mount
+                Jungfrau.
+              </p>
+              <h5>Dwayne Johnson</h5>
+              <small>Switzerland</small>
+            </div>
+            <img src="images/review1.2.jpg" alt="user" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="images/Sea Travel Logo.png" class="footer-logo" />
+            <p>
+              The Shetty's Tours and Travel respects the privacy of every
+              individual who uses our website. We only process and use the data
+              obtained through this site for the specific purposes you’ve
+              authorized for your transaction, based on the rental agreement for
+              your reservation. We do not sell customer information to third
+              parties.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h4>Features</h4>
+            <p>Deals & Offers</p>
+            <p>Customer Reviews</p>
+            <p>Cancelation Policy</p>
+          </div>
+          <div class="col-md-3">
+            <h4>Quick Contact</h4>
+            <p>
+              <i class="fa fa-phone-square"></i
+              ><a href="tel:+91 7400282118" target="blank">+91 7400282118</a>
+            </p>
+            <p>
+              <i class="fa fa-envelope"></i
+              ><a href="mailto:chiragshetty2518@gmail.com" target="blank"
+                >chiragshetty2518@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa fa-home"></i>
+              <a href="https://goo.gl/maps/XDqdnrbEpgyZgVmw9" target="blank"
+                >Malabar Hill</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h4>Follow Us on</h4>
+            <p>
+              <i class="fa fa-facebook-official"></i
+              ><a
+                href="https://www.facebook.com/chirag.shetty25/?viewas=100000686899395&show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0&show_community_review_changes=0&show_follower_visibility_disclosure=0"
+                target="blank"
+              >
+                Facebook</a
+              >
+            </p>
+            <p>
+              <i class="fa fa-youtube-play"></i>
+              <a href="https://youtu.be/h-FOCuy4d7k" target="blank"> Youtube</a>
+            </p>
+            <p>
+              <i class="fa fa-twitter"></i>
+              <a href="https://twitter.com/ChiragAShetty" target="blank"
+                >Twitter</a
+              >
+            </p>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          Established in @2022 by Chirag.A.Shetty <i class="fa fa-heart"></i>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

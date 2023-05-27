@@ -1,0 +1,117 @@
+*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: calibri;
+			outline: none;
+		}
+
+body{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: black;
+			/*background:linear-gradient(-30deg,red,blue) ;*/
+			 background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("images/logop3.jpg") ;
+
+		}
+.box{
+	width: 350px;
+	height: 500px;
+	/*background: white;*/
+	background: #d7c087;
+	position: relative;
+	overflow: hidden;
+	border-radius: 15px;
+}
+
+.signup{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	/*background: red;*/
+	width: 100%;
+	height: 400px;
+	padding: 0px 20px;
+	transition: 0.5s;
+}
+
+.login{
+	position: absolute;
+	bottom: 0;
+	left: 101%;
+	/*background: green;*/
+	width: 100%;
+	height: 400px;
+	padding: 0pc 20px;
+	transition: 0.5s;
+}
+
+.input-group{
+margin-top: 10px;
+}
+.input-group span{
+	color: #7c220f;
+}
+
+.input-group .inp{
+	width: 100%;
+	padding: 10px 15px;
+	border-radius: 100px;
+	border: 1px solid #c6c6c6;
+	margin-top: 5px;
+}
+.submit-inp{
+	/*background: linear-gradient(30deg,red,blue);*/
+	background:linear-gradient(30deg,#d18269,#580a07) ;
+	border: none !important;
+	color: white;
+	font-weight: bolder;
+	font-variant: small-caps;
+	font-size: 18px;
+}
+.toggle-btn{
+-webkit-appearance: none;	
+width: 150px;
+height: 40px;
+border: 1px solid grey;
+position: absolute;
+top: 30px;
+left:calc(50% - 75px) ;
+border-radius: 100px;
+
+}
+
+.toggle-btn:before{
+	content: 'Signup';
+	color: white;
+	font-weight: bolder;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	/*background:linear-gradient(30deg,red,blue) ;*/
+	background:linear-gradient(30deg,#d18269,#580a07) ;
+	border-radius: 100px;
+	display: grid;
+	place-items: center;
+	transition: 0.5s;
+}
+
+.toggle-btn:checked:before{
+	content: 'Login';
+	left: 50%;
+}
+
+.toggle-btn:checked + .signup{
+
+	left: -101%;
+}
+
+.toggle-btn:checked + .signup + .login{
+	left: 0%;
+}
+
+
